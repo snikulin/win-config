@@ -43,7 +43,12 @@ foreach ($app in $apps) {
     }
 }
 
-# Brave installation is handled in brave.ps1
+# Git config. Username and email.
+Write-Host "Configuring Git user name and email..."
+git config --global user.name "Sergey Nikulin"
+git config --global user.email "snikulin@gmail.com"
+Write-Host "Git user name and email configured."
+
 
 # Brave installation is handled in brave.ps1
 Write-Host "Running Brave installation script..."
